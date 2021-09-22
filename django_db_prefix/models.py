@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.db.models.signals import class_prepared
+from django.db.models.signals import class_prepared, pre_init
 
 
 def add_db_prefix(sender, **kwargs):
